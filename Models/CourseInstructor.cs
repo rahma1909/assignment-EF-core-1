@@ -16,6 +16,7 @@ namespace assignment.Models
         [Required]
         public int evaluate { get; set; }
 
+        [Required]
         public int course_ID { get; set; }
        
     }

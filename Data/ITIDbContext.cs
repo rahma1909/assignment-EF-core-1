@@ -31,5 +31,6 @@ namespace assignment.Data
         public DbSet<course> courses { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<CourseInstructor> CourseInstructor { get; set; }
+        public DbSet<Topic> Topics { get; set; }
     }
 }
