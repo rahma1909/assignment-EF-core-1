@@ -12,12 +12,14 @@ namespace assignment.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Ins_ID { get; set; }
+        public int Instructor_Id { get; set; }
+
+
         [Required]
         public int evaluate { get; set; }
 
-        [Required]
-        public int course_ID { get; set; }
+       
+        public int course_Id { get; set; }
        
     }
 }

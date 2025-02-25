@@ -15,6 +15,12 @@ namespace assignment.Data
         {
             modelBuilder.ApplyConfiguration(new courseConfig());
             modelBuilder.ApplyConfiguration(new insConfig());
+
+            modelBuilder.Entity<Student>().HasOne(s => s.department)
+                .WithMany(d => d.students)
+                .HasForeignKey(d => d.dep_id);
+
+            modelBuilder.Entity<StudCourse>().HasKey(sc => new {sc.Student_Id ,sc.course_Id});
         }
         public ITIDbContext()
         {
