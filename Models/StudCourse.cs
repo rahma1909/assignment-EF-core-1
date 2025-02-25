@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace assignment.Models
 {
-    [PrimaryKey(nameof(Course_ID),nameof(Stud_ID))]
+    //[PrimaryKey(nameof(Course_ID),nameof(Stud_ID))]
     internal class StudCourse
     {
         [Column("StudentGrade")]
         public int Grade { get; set; }
    
-        public int Course_ID { get; set; }
+        public int course_Id { get; set; }
    
-        public int Stud_ID { get; set; }
+        public int Student_Id { get; set; }
     }
 }

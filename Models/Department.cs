@@ -24,7 +24,11 @@ namespace assignment.Models
         [DataType(DataType.Date)]
         public DateOnly HiringDate { get; set; }
 
+ 
 
-        public required int Ins_ID { get; set; }
+       
+        public List<Instructor> Instructors { get; set; }
+
+        public List<Student> students { get; set; }
     }
 }

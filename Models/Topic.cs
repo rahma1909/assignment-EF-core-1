@@ -10,5 +10,7 @@ namespace assignment.Models
     {
         public int Id { get; set; }
         public required string Name { get; set; }
+
+        public List<course> courses { get; set; }
     }
 }

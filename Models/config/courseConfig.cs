@@ -28,8 +28,7 @@ namespace assignment.Models.config
             c.Property(c => c.Duration)
                 .HasDefaultValueSql("GETDATE()");
 
-            c.Property(c => c.Topic_ID).IsRequired();
-               
+           
         }
     }
 }

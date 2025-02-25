@@ -33,8 +33,7 @@ namespace assignment.Models.config
             I.Property(c => c.HourRate)
             .IsRequired(false);
 
-            I.Property(c => c.dep_id).IsRequired();
-
+       
            
         }
     }
